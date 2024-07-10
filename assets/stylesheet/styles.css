@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Header */
+.top-header {
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.top-header .contact-info span,
+.top-header .social-icons span {
+  margin-right: 20px;
+}
+
+/* Main Header */
+.main-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.main-header .logo h1 {
+  color: darkblue;
+  font-weight: 600;
+}
+
+.main-header .navigation ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header .navigation li {
+  margin-left: 20px;
+}
+
+.main-header .navigation a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.main-header .contact-now-btn {
+  background-color: lightred;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: white;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.welcome-section .welcome-text h2 {
+  color: lightred;
+}
+
+.welcome-section .welcome-text h3 {
+  margin: 10px 0;
+}
+
+.welcome-section .learn-more-btn {
+  background-color: crimson;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: white;
+}
+
+/* Services Overview Section */
+.services-overview {
+  background-color: verylightpurple;
+  display: flex;
+  padding: 20px;
+}
+
+.services-overview .service-column,
+.services-overview .service-card {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.services-overview .service-card {
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.services-overview .service-card h4 {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Trust Section */
+.trust-section {
+  display: flex;
+  padding: 20px;
+}
+
+.trust-section .trust-text h4 {
+  color: lightred;
+}
+
+.trust-section .learn-more-btn {
+  background-color: crimson;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: white;
+}
+
+/* Our Services Section */
+.our-services {
+  text-align: center;
+  padding: 20px;
+}
+
+.our-services .service-card-row {
+  display: flex;
+  justify-content: center;
+}
+
+.our-services .service-card {
+  background-color: veryveryverylightpurple;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+/* Completed Cases Section */
+.completed-cases {
+  display: flex;
+  padding: 20px;
+}
+
+.completed-cases .cases-text h4 {
+  font-weight: bold;
+}
+
+.completed-cases a {
+  border: 1px solid crimson;
+  padding: 5px 10px;
+  color: crimson;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-section .profile-pic {
+  border-radius: 50%;
+}
+
+.testimonial-section .stars {
+  color: yellow;
+}
+
+/* Recent News Section */
+.recent-news {
+  text-align: center;
+  padding: 20px;
+}
+
+.recent-news .news-row {
+  display: flex;
+  justify-content: center;
+}
+
+.recent-news .news-column {
+  margin: 0 10px;
+  text-align: left;
+}
+
+.recent-news .news-column h4 {
+  color: red;
+}
+
+/* Call Back Request Section */
+.callback-request {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.callback-request .callback-form input {
+  margin: 10px;
+  padding: 10px;
+}
+
+.callback-request .callback-form button {
+  background-color: crimson;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Footer Section */
+footer {
+  background-color: white;
+  padding: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
